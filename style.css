@@ -16,21 +16,20 @@ body {
 
 .search-container {
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
 }
 
-.search-card {
+.search-container .search-card {
   width: 100%;
-  position: relative;
+
   max-width: 800px;
   margin-top: 50px;
   background: #fff;
   border-radius: 8px;
-  padding: 20px 40px;
+  padding: 20px 28px;
   box-shadow: 0 0px 1rem rgba(0, 0, 0, 0.1);
 }
 
@@ -79,4 +78,58 @@ body {
 
 .search-card .wrapper .github-symbol i {
   margin-right: 3px;
+}
+
+#profile {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Card Body */
+
+.card-body {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px 28px;
+  box-shadow: 0 0px 1rem rgba(0, 0, 0, 0.1);
+}
+
+.card-body .primary-column {
+  display: flex;
+  flex-direction: column;
+}
+.card-body .row {
+  display: flex;
+  text-align: center;
+}
+.card-body .row img {
+  border-radius: 5px;
+  width: 300px;
+  height: 100%;
+  margin: 20px 0 20px 0;
+}
+
+.card-body .row a,
+.card-body .row a {
+  cursor: pointer;
+  padding: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  background: #eeeeee;
+  color: #9a999e;
+  transition: all 0.3s ease;
+}
+
+.card-body .row a:hover {
+  background: #ebebeb;
+}
+
+.card-body .row .wrapper-column {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
