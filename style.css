@@ -10,7 +10,7 @@
 body {
   width: 100%;
   height: 100vh;
-  background: #F6F8FA;
+  background: #f6f8fa;
   color: #3a3942;
 }
 
@@ -35,45 +35,48 @@ body {
 }
 
 .search-card h1 {
-  font-size: calc(32 / 16 * 1rem);
+  font-size: calc(28 / 16 * 1rem);
   padding-bottom: 5px;
 }
 
 .search-card p {
   font-weight: 500;
   color: #9a999e;
-  font-size: calc(20 / 16 * 1rem);
+  font-size: calc(18 / 16 * 1rem);
   padding-bottom: 15px;
 }
 
-.search-card input {
-  padding: 8px 10px;
-  font-size: 1rem;
-  border-radius:0 6px 6px 0;
-  border: 2px solid #e9e9e9;
+.search-card .wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.search-card .wrapper input {
+  padding: 8px;
+  font-size: 0.9rem;
+  border-radius: 0 5px 5px 0;
+  border: 2px solid #eeee;
   width: 100%;
-  max-width: 520px;
+  max-width: 82%;
   font-weight: 500;
   color: #9a999e;
   outline: none;
-  margin-bottom: 10px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
-.search-card input::placeholder {
+.search-card .wrapper input::placeholder {
   color: #9a999e;
 }
 
-.search-card input:focus {
-  border: 2px solid #dadada;
+.search-card .wrapper .github-symbol {
+  background: #eeeeee;
+  color: #9a999e;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  font-size: 0.9rem;
 }
 
-.github-symbol {
-  background: #e9e9e9;
-  padding: 8px 10px;
+.search-card .wrapper .github-symbol i {
+  margin-right: 3px;
 }
-.github-symbol span {
-  font-size: 1rem;
-}
-
-
