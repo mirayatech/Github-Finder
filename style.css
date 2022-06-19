@@ -47,9 +47,9 @@ body {
 }
 
 .search-card input {
-  padding: 9px 0 9px 45px;
+  padding: 8px 10px;
   font-size: 1rem;
-  border-radius: 6px;
+  border-radius:0 6px 6px 0;
   border: 2px solid #e9e9e9;
   width: 100%;
   max-width: 520px;
@@ -68,10 +68,12 @@ body {
   border: 2px solid #dadada;
 }
 
-.search-card i {
-  position: absolute;
-  right: 625px;
-  font-size: calc(17 / 16 * 1rem);
-  color: #9a999e;
-  top: 132px;
+.github-symbol {
+  background: #e9e9e9;
+  padding: 8px 10px;
 }
+.github-symbol span {
+  font-size: 1rem;
+}
+
+
