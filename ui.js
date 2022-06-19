@@ -28,7 +28,7 @@ class UI {
                     <li class="list-group-item">Location: ${user.location}</li>
                     <li class="list-group-item">Member Since: ${user.created_at}</li>
                     </ul>
-                </div>
+                
                 
             </div>
          </div>
