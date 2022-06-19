@@ -6,3 +6,11 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #4aa7ff, #2D5CFE);
+}
