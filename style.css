@@ -26,7 +26,7 @@ body {
 .search-container .search-card {
   width: 100%;
   max-width: 850px;
-  margin-top: 50px;
+  margin-top: 20px;
   background: #fff;
   border-radius: 5px;
   padding: 20px 28px;
@@ -178,4 +178,21 @@ body {
   padding-bottom: 0;
   border: 0;
   margin-bottom: 0;
+}
+
+.page-heading {
+  font-size: calc(28 / 16 * 1rem);
+margin: 25px 0;
+}
+
+.alert {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 850px;
+  background: #E5524C;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0px 1rem rgba(0, 0, 0, 0.1);
 }
