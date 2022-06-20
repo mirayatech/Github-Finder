@@ -182,14 +182,14 @@ body {
 
 .page-heading {
   font-size: calc(28 / 16 * 1rem);
-margin: 25px 0;
+  margin: 25px 0;
 }
 
 .alert {
   margin-top: 10px;
   width: 100%;
   max-width: 850px;
-  background: #E5524C;
+  background: #e5524c;
   text-align: center;
   color: #fff;
   border-radius: 5px;

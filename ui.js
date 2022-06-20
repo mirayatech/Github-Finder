@@ -39,8 +39,7 @@ class UI {
 
   // show alert mesage
   showAlert(message, className) {
-
-    this.clearAlert()
+    this.clearAlert();
 
     const div = document.createElement("div");
 
@@ -51,12 +50,10 @@ class UI {
     const container = document.querySelector(".search-container");
     const search = document.querySelector(".search-card");
     container.insertBefore(div, search);
-      setTimeout(() => {
-    this.clearAlert()
-  }, 2000);
+    setTimeout(() => {
+      this.clearAlert();
+    }, 2000);
   }
-
-
 
   clearAlert() {
     const currentAlert = document.querySelector(".alert");
