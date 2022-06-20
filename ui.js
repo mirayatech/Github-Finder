@@ -23,10 +23,10 @@ class UI {
 
                     
                     <ul class="list-group">
-                    <li class="list-group-item">Company: ${user.company}</li>
-                    <li class="list-group-item">Website/Blog: ${user.blog}</li>
-                    <li class="list-group-item">Location: ${user.location}</li>
-                    <li class="list-group-item">Member Since: ${user.created_at}</li>
+                    <li class="list-group-item"><span class="thick">Company:</span> ${user.company}</li>
+                    <li class="list-group-item"><span class="thick">Website/Blog:</span>  ${user.blog}</li>
+                    <li class="list-group-item"><span class="thick">Location:</span>  ${user.location}</li>
+                    <li class="list-group-item"><span class="thick">Member Since:</span>  ${user.created_at}</li>
                     </ul>
                 
                 </div>

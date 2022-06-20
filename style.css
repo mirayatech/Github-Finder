@@ -57,7 +57,7 @@ body {
   border-radius: 0 4px 4px 0;
   border: 2px solid #eeee;
   width: 100%;
-  max-width: 82%;
+  max-width: 80%;
   font-weight: 500;
   color: #9a999e;
   outline: none;
@@ -130,7 +130,7 @@ body {
 }
 
 .card-body .row .wrapper-column {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .card-body .row .wrapper-column .secondary-column span {
@@ -157,4 +157,25 @@ body {
 
 .card-body .row .wrapper-column .secondary-column span:nth-child(4) {
   background: #6eafe8;
+}
+
+.list-group {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.list-group .list-group-item {
+  margin: 15px 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eeee;
+}
+
+.list-group .list-group-item .thick {
+  font-weight: 600;
+}
+
+.list-group .list-group-item:last-child {
+  padding-bottom: 0;
+  border: 0;
+  margin-bottom: 0;
 }
