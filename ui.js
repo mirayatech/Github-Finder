@@ -32,7 +32,9 @@ class UI {
     </div>
  </div>
  <h3 class="page-heading">Latest Repos</h3>
- <div id="repos"></div>
+ <div id="repos">
+ 
+ </div>
     `;
   }
 
@@ -44,10 +46,10 @@ class UI {
       output += `
       <div class="card-repo">
       <div class="row">
-        <div class="col-md-6">
+        <div class="repo-wrapper">
           <a href="${repo.html_url}" target="_blank">${repo.name}</a>
         </div>
-        <div class="col-md-6">
+        <div class="col-repo">
         <span class="badge badge-primary">Stars: ${repo.stargazers_count}</span>
         <span class="badge badge-secondary">Watchers: ${repo.watchers_count}</span>
         <span class="badge badge-success">Forks: ${repo.forms_count}</span>
