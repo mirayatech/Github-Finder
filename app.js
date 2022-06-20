@@ -1,20 +1,25 @@
-const github = new Github(); // Init Github
-const ui = new UI(); // Init UI
+// Init Github
+const github = new Github;
 
-const searchUser = document.getElementById("search-user");
+const ui = new UI;
 
-searchUser.addEventListener("keyup", (e) => {
+const searchUser = document.getElementById('search-user');
+
+searchUser.addEventListener('keyup', (e) => {
   const userText = e.target.value;
 
-  if (userText !== "") {
-    github.getUser(userText).then((data) => {
-      if (data.profile.message === "Not Found") {
-        // ui.showAlert("User not found", "alert");
+  if(userText !== ''){
+   // Make http call
+   github.getUser(userText)
+    .then(data => {
+      if(data.profile.message === 'Not Found') {
       } else {
-        ui.showProfile(data.profile); // show profile
+        ui.showProfile(data.profile);
+        ui.showRepos(data.repos);
       }
-    });
+    })
   } else {
+    // Clear profile
     ui.clearProfile();
   }
-});
+}); 

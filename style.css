@@ -183,15 +183,17 @@ body {
   font-size: calc(28 / 16 * 1rem);
   margin: 25px 0;
 }
-/* 
-.alert {
-  margin: 10px 0;
+
+#repos {
   width: 100%;
   max-width: 850px;
-  background: #e5524c;
-  text-align: center;
-  color: #fff;
-  border-radius: 4px;
+  background: #fff;
+  border-radius: 5px;
   padding: 20px;
   box-shadow: 0 0px 1rem rgba(0, 0, 0, 0.1);
-} */
+}
+
+#repos .card-body {
+  display: flex;
+  z-index: 200;
+}
