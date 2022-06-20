@@ -29,7 +29,7 @@ class UI {
                     <li class="list-group-item">Member Since: ${user.created_at}</li>
                     </ul>
                 
-                
+                </div>
             </div>
          </div>
          <h3 class="page-heading">Latest Repos</h3>
