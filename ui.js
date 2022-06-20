@@ -1,6 +1,6 @@
 class UI {
   constructor() {
-    this.profile = document.getElementById('profile');
+    this.profile = document.getElementById("profile");
   }
 
   // Display profile in UI
@@ -38,9 +38,9 @@ class UI {
 
   // Show user repos
   showRepos(repos) {
-    let output = '';
+    let output = "";
 
-    repos.forEach(function(repo) {
+    repos.forEach(function (repo) {
       output += `
       <div class="card card-body mb-2">
       <div class="row">
@@ -56,12 +56,11 @@ class UI {
     </div>
       `;
     });
-    document.getElementById('repos').innerHTML = output;
+    document.getElementById("repos").innerHTML = output;
   }
-
 
   // Clear profile
   clearProfile() {
-    this.profile.innerHTML = '';
+    this.profile.innerHTML = "";
   }
 }
