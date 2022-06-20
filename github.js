@@ -1,6 +1,6 @@
 class Github {
   constructor() {
-    this.client_id = "066ac25e4386eb5b9e58";
+    this.client_id = "066ac25e4386eb5b9e58s";
     this.client_secret = "e5def700a2959f95738ff003ab390f90af74029a";
   }
 

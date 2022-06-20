@@ -15,9 +15,9 @@ body {
 }
 
 .search-container {
-  padding: 10px;
   width: 100%;
   display: flex;
+  padding: 15px;
   flex-direction: column;
   align-items: center;
   margin: auto;
@@ -26,7 +26,6 @@ body {
 .search-container .search-card {
   width: 100%;
   max-width: 850px;
-  margin-top: 20px;
   background: #fff;
   border-radius: 5px;
   padding: 20px 28px;
@@ -184,15 +183,15 @@ body {
   font-size: calc(28 / 16 * 1rem);
   margin: 25px 0;
 }
-
+/* 
 .alert {
-  margin-top: 10px;
+  margin: 10px 0;
   width: 100%;
   max-width: 850px;
   background: #e5524c;
   text-align: center;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 4px;
   padding: 20px;
   box-shadow: 0 0px 1rem rgba(0, 0, 0, 0.1);
-}
+} */
