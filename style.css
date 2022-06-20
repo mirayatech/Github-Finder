@@ -193,7 +193,41 @@ body {
   box-shadow: 0 0px 1rem rgba(0, 0, 0, 0.1);
 }
 
-#repos .card-body {
+#repos .card-repo {
   display: flex;
-  z-index: 200;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  margin: 15px 0;
+  border-bottom: 1px solid #eeee;
+}
+
+#repos .card-repo a,
+#repos .card-repo a:visited {
+  font-weight: 600;
+  color: #3a3942;
+  font-size: calc(20 / 16 * 1rem);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#repos .card-repo a:hover {
+  color: #3a3942d0;
+}
+
+#repos .card-repo {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin: 20px 0;
+  border-bottom: 1px solid #eeee;
+}
+
+#repos .card-repo:first-child {
+  margin: 0;
+}
+
+#repos .card-repo:last-child {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
