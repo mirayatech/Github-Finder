@@ -22,7 +22,7 @@ class UI {
 
             
             <ul class="list-group">
-            <li class="list-group-item"><span class="thick">Company:</span> ${user.company}</li>
+            <li class="list-group-item company"><span class="thick">Company:</span> ${user.company}</li>
             <li class="list-group-item"><span class="thick">Website/Blog:</span>  ${user.blog}</li>
             <li class="list-group-item"><span class="thick">Location:</span>  ${user.location}</li>
             <li class="list-group-item"><span class="thick">Member Since:</span>  ${user.created_at}</li>
@@ -36,7 +36,13 @@ class UI {
  
  </div>
     `;
+
+    if( user.company === null) {
+     document.querySelector('.company').innerHTML = '<li class="list-group-item company"><span class="thick">Company:</span><span class"badge-primary"> No Details Provided</span>  </li>'
+    }
   }
+
+
 
   // Show user repos
   showRepos(repos) {
@@ -52,7 +58,7 @@ class UI {
         <div class="col-repo">
         <span class="badge badge-primary">Stars: ${repo.stargazers_count}</span>
         <span class="badge badge-secondary">Watchers: ${repo.watchers_count}</span>
-        <span class="badge badge-success">Forks: ${repo.forms_count}</span>
+        <span class="badge badge-success">Forks: ${repo.forks_count}</span>
         </div>
       </div>
     </div>
