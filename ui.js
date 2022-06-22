@@ -64,6 +64,7 @@ class UI {
 
     repos.forEach(function (repo) {
       output += `
+      <div class="alert-div"></div>
       <div class="card-repo">
       <div class="row">
         <div class="repo-wrapper">
@@ -80,6 +81,8 @@ class UI {
     });
     document.getElementById("repos").innerHTML = output;
   }
+
+ 
 
   // Clear profile
   clearProfile() {
