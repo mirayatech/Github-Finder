@@ -182,11 +182,10 @@ body {
   margin-bottom: 0;
 }
 
-
-.list-group .list-group-item a, .list-group .list-group-item a:visited{
-text-decoration: none;
-
-color: #0db596;
+.list-group .list-group-item a,
+.list-group .list-group-item a:visited {
+  text-decoration: none;
+  color: #0db596;
 }
 
 .list-group .list-group-item a:hover {
@@ -195,8 +194,11 @@ color: #0db596;
   text-decoration: underline;
 }
 
-.list-group .list-group-item .company .yellow, .list-group .list-group-item .blog .yellow, .list-group .list-group-item .location .yellow, .list-group .list-group-item .member-since .yellow    {
-  background: #F39C13;
+.list-group .list-group-item .company .yellow,
+.list-group .list-group-item .blog .yellow,
+.list-group .list-group-item .location .yellow,
+.list-group .list-group-item .member-since .yellow {
+  background: #f39c13;
   font-size: 0.8rem;
   color: #fff;
   font-weight: 500;
@@ -236,12 +238,10 @@ color: #0db596;
   font-weight: 600;
   font-size: calc(20 / 16 * 1rem);
   text-decoration: none;
-  color: #0db596;  
+  color: #0db596;
   transition: all 0.3s ease;
   word-break: break-all;
 }
-
-
 
 #repos .card-repo a:hover {
   background: none;

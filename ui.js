@@ -37,24 +37,26 @@ class UI {
  </div>
     `;
 
-    if( user.company == null) {
-     document.querySelector('.company').innerHTML = '<li class="list-group-item company"><span class="thick">Company:</span> <span class="yellow"> No Details Provided</span></li>'
+    if (user.company == null) {
+      document.querySelector(".company").innerHTML =
+        '<li class="list-group-item company"><span class="thick">Company:</span> <span class="yellow"> No Details Provided</span></li>';
     }
 
-    if( user.blog == undefined || user.blog == '') {
-      document.querySelector('.blog').innerHTML = '<li class="list-group-item blog"><span class="thick">Website/Blog:</span> <span class="yellow"> No Details Provided</span></li>'
-     }
+    if (user.blog == undefined || user.blog == "") {
+      document.querySelector(".blog").innerHTML =
+        '<li class="list-group-item blog"><span class="thick">Website/Blog:</span> <span class="yellow"> No Details Provided</span></li>';
+    }
 
-     if( user.blog == undefined || user.blog == '') {
-      document.querySelector('.location').innerHTML = '<li class="list-group-item company"><span class="thick">Location:</span> <span class="yellow"> No Details Provided</span></li>'
-     }
+    if (user.blog == undefined || user.blog == "") {
+      document.querySelector(".location").innerHTML =
+        '<li class="list-group-item company"><span class="thick">Location:</span> <span class="yellow"> No Details Provided</span></li>';
+    }
 
-     if( user.blog == undefined || user.blog == '') {
-      document.querySelector('.member-since').innerHTML = '<li class="list-group-item company"><span class="thick">Member Since:</span> <span class="yellow"> No Details Provided</span></li>'
-     }
+    if (user.blog == undefined || user.blog == "") {
+      document.querySelector(".member-since").innerHTML =
+        '<li class="list-group-item company"><span class="thick">Member Since:</span> <span class="yellow"> No Details Provided</span></li>';
+    }
   }
-
-
 
   // Show user repos
   showRepos(repos) {
