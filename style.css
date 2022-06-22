@@ -183,7 +183,19 @@ body {
 }
 
 
-.list-group .list-group-item .company .yellow, .list-group .list-group-item .blog .yellow  {
+.list-group .list-group-item a, .list-group .list-group-item a:visited{
+text-decoration: none;
+
+color: #0db596;
+}
+
+.list-group .list-group-item a:hover {
+  background: none;
+  color: #108a74;
+  text-decoration: underline;
+}
+
+.list-group .list-group-item .company .yellow, .list-group .list-group-item .blog .yellow, .list-group .list-group-item .location .yellow, .list-group .list-group-item .member-since .yellow    {
   background: #F39C13;
   font-size: 0.8rem;
   color: #fff;
@@ -222,15 +234,19 @@ body {
 #repos .card-repo a,
 #repos .card-repo a:visited {
   font-weight: 600;
-  color: #3a3942;
   font-size: calc(20 / 16 * 1rem);
   text-decoration: none;
+  color: #0db596;  
   transition: all 0.3s ease;
   word-break: break-all;
 }
 
+
+
 #repos .card-repo a:hover {
-  color: #3a3942d0;
+  background: none;
+  color: #108a74;
+  text-decoration: underline;
 }
 
 #repos .card-repo:first-child {
