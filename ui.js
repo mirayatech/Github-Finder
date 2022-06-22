@@ -23,9 +23,9 @@ class UI {
             
             <ul class="list-group">
             <li class="list-group-item company"><span class="thick">Company:</span> ${user.company}</li>
-            <li class="list-group-item"><span class="thick">Website/Blog:</span> <a href="${user.blog}">${user.blog}</a>  </li>
-            <li class="list-group-item"><span class="thick">Location:</span>  ${user.location}</li>
-            <li class="list-group-item"><span class="thick">Member Since:</span>  ${user.created_at}</li>
+            <li class="list-group-item blog"><span class="thick">Website/Blog:</span> <a href="${user.blog}">${user.blog}</a>  </li>
+            <li class="list-group-item location"><span class="thick">Location:</span>  ${user.location}</li>
+            <li class="list-group-item member-since"><span class="thick">Member Since:</span>  ${user.created_at}</li>
             </ul>
         
         </div>
@@ -41,8 +41,16 @@ class UI {
      document.querySelector('.company').innerHTML = '<li class="list-group-item company"><span class="thick">Company:</span> <span class="yellow"> No Details Provided</span></li>'
     }
 
-    if( user.blog == '') {
-      document.querySelector('.company').innerHTML = '<li class="list-group-item blog"><span class="thick">Website/Blog:</span> <span class="yellow"> No Details Provided</span></li>'
+    if( user.blog == undefined || user.blog == '') {
+      document.querySelector('.blog').innerHTML = '<li class="list-group-item blog"><span class="thick">Website/Blog:</span> <span class="yellow"> No Details Provided</span></li>'
+     }
+
+     if( user.blog == undefined || user.blog == '') {
+      document.querySelector('.location').innerHTML = '<li class="list-group-item company"><span class="thick">Location:</span> <span class="yellow"> No Details Provided</span></li>'
+     }
+
+     if( user.blog == undefined || user.blog == '') {
+      document.querySelector('.member-since').innerHTML = '<li class="list-group-item company"><span class="thick">Member Since:</span> <span class="yellow"> No Details Provided</span></li>'
      }
   }
 
