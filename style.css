@@ -204,7 +204,6 @@ body {
   font-weight: 500;
   padding: 5px 10px;
   border-radius: 4px;
-  margin-left: 5px;
 }
 
 .page-heading {
@@ -306,15 +305,6 @@ footer a:hover {
   color: #6f6c85;
 }
 
-
-.alert-div {
-  background: #E74C3C;
-}
-.alert-div div {
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.1rem;
-}
 /* MEDIA QUERY */
 
 @media screen and (max-width: 644px) {
