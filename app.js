@@ -12,7 +12,6 @@ searchUser.addEventListener("keyup", (e) => {
     // Make http call
     github.getUser(userText).then((data) => {
       if (data.profile.message === "Not Found") {
-
       } else {
         ui.showProfile(data.profile);
         ui.showRepos(data.repos);
@@ -23,3 +22,11 @@ searchUser.addEventListener("keyup", (e) => {
     ui.clearProfile();
   }
 });
+
+const convertTime = (time) => {
+  return new Date(time).toLocaleDateString("en-us", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+};
