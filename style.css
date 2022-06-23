@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+:root {
+  --link-color:#0db596;
+  --green:#18bc9c;
+  --blue:#4daded;
+  --yellow:#f39c13;
+  --text-color:#9a999e;
+  --dark-grey:#3a3942;
+  --medium-grey:#95a5a6;
+  --light-grey:#eeeeee;
+  --white:#fff;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +24,7 @@ body {
   width: 100%;
   height: 100vh;
   background: #f6f8fa;
-  color: #3a3942;
+  color: var(--dark-grey);
 }
 
 .search-container {
@@ -26,7 +39,7 @@ body {
 .search-container .search-card {
   width: 100%;
   max-width: 850px;
-  background: #fff;
+  background: var(--white);
   border-radius: 5px;
   padding: 20px 28px;
   box-shadow: 0 0px 1rem rgba(0, 0, 0, 0.1);
@@ -39,7 +52,7 @@ body {
 
 .search-card p {
   font-weight: 500;
-  color: #9a999e;
+  color: var(--text-color);
   font-size: calc(18 / 16 * 1rem);
   padding-bottom: 15px;
 }
@@ -54,22 +67,22 @@ body {
   padding: 6px 8px;
   font-size: 0.9rem;
   border-radius: 0 4px 4px 0;
-  border: 2px solid #eeee;
+  border: 2px solid var(--light-grey);
   width: 100%;
   max-width: 80%;
   font-weight: 500;
-  color: #9a999e;
+  color: var(--text-color);
   outline: none;
   transition: all 0.3s ease;
 }
 
 .search-card .wrapper input::placeholder {
-  color: #9a999e;
+  color: var(--text-color);
 }
 
 .search-card .wrapper .github-symbol {
-  background: #eeeeee;
-  color: #9a999e;
+  background: var(--light-grey)ee;
+  color: var(--text-color);
   padding: 8px;
   border-radius: 4px 0 0 4px;
   font-size: 0.9rem;
@@ -89,7 +102,7 @@ body {
 .card-body {
   width: 100%;
   max-width: 850px;
-  background: #fff;
+  background: var(--white);
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0 0px 1rem rgba(0, 0, 0, 0.1);
@@ -118,13 +131,14 @@ body {
   border-radius: 4px;
   text-decoration: none;
   font-size: 0.9rem;
-  color: #fff;
-  background: #3a3942;
+  color: var(--white);
+  background: var(--dark-grey);
   transition: all 0.3s ease;
 }
 
 .card-body .row a:hover {
-  background: #3a3942ef;
+ color: blue;
+
 }
 
 .card-body .row .wrapper-column {
@@ -138,14 +152,14 @@ body {
 
 .card-body .row .wrapper-column .secondary-column span {
   font-size: 0.8rem;
-  color: #fff;
+  color: var(--white);
   font-weight: 500;
   padding: 5px 10px;
   border-radius: 4px;
 }
 
 .card-body .row .wrapper-column .secondary-column span:first-child {
-  background: #3a3942;
+  background: var(--dark-grey);
   margin: 0;
 }
 
@@ -154,11 +168,11 @@ body {
 }
 
 .card-body .row .wrapper-column .secondary-column span:nth-child(3) {
-  background: #18BC9C;
+  background: var(--green);
 }
 
 .card-body .row .wrapper-column .secondary-column span:nth-child(4) {
-  background: #4daded;
+  background: var(--blue);
 }
 
 .list-group {
@@ -169,7 +183,7 @@ body {
 .list-group .list-group-item {
   margin: 15px 0;
   padding-bottom: 15px;
-  border-bottom: 1px solid #eeee;
+  border-bottom: 1px solid var(--light-grey);
 }
 
 .list-group .list-group-item .thick {
@@ -185,7 +199,7 @@ body {
 .list-group .list-group-item a,
 .list-group .list-group-item a:visited {
   text-decoration: none;
-  color: #0db596;
+  color: var(--link-color);
 }
 
 .list-group .list-group-item a:hover {
@@ -198,9 +212,9 @@ body {
 .list-group .list-group-item .blog .yellow,
 .list-group .list-group-item .location .yellow,
 .list-group .list-group-item .member-since .yellow {
-  background: #f39c13;
+  background: var(--yellow);
   font-size: 0.8rem;
-  color: #fff;
+  color: var(--white);
   font-weight: 500;
   padding: 5px 10px;
   border-radius: 4px;
@@ -214,19 +228,17 @@ body {
 #repos {
   width: 100%;
   max-width: 850px;
-  background: #fff;
+  background: var(--white);
   border-radius: 5px;
-  padding: 20px;
   box-shadow: 0 0px 1rem rgba(0, 0, 0, 0.1);
 }
 
 #repos .card-repo {
-  padding-bottom: 20px;
-  margin: 20px 0;
-  border-bottom: 1px solid #eeee;
+  border-bottom: 1px solid var(--light-grey);
 }
 
 #repos .card-repo .row {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -237,7 +249,7 @@ body {
   font-weight: 600;
   font-size: calc(20 / 16 * 1rem);
   text-decoration: none;
-  color: #0db596;
+  color: var(--link-color);
   word-break: break-all;
 }
 
@@ -265,44 +277,39 @@ body {
 
 #repos .card-repo .badge {
   font-size: 0.8rem;
-  color: #fff;
+  color: var(--white);
   font-weight: 500;
   padding: 5px 10px;
   border-radius: 4px;
 }
 
 #repos .card-repo .badge:first-child {
-  background: #3a3942;
+  background: var(--yellow);
   margin: 0;
 }
 
 #repos .card-repo .badge:nth-child(2) {
-  background: #95a5a6;
+  background: var(--blue);
 }
 
 #repos .card-repo .badge:nth-child(3) {
-  background: #74d382;
-}
-
-#repos .card-repo .badge:nth-child(4) {
-  background: #6eafe8;
+  background: var(--green);
 }
 
 footer {
   padding: 20px 0 30px 0;
   text-align: center;
-  color: #9a999e;
+  color: var(--medium-grey)
 }
 
 footer a,
 footer a:visited {
-  color: #3a3942;
-  font-weight: 500;
+  color: var(--dark-grey);
   transition: all 0.3s ease;
 }
 
 footer a:hover {
-  color: #6f6c85;
+  color: #3a3942cb;
 }
 
 /* MEDIA QUERY */
@@ -345,7 +352,6 @@ footer a:hover {
     margin-left: 0;
   }
 }
-
 
 /* MEDIA QUERY */
 
