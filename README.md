@@ -13,7 +13,7 @@ GitHub Finder makes it super easy to find any random GitHub user and see their w
 
 ## How it looks 👀
 
-<strong>Live Demo: </strong> https://githubfinder-ui.netlify.app/ <br> <br> 
+<strong>Live Demo: </strong> https://ghfinder-phi.vercel.app/<br> <br> 
 <strong>Home page / start page:</strong> <br> <br>
 ![1](https://user-images.githubusercontent.com/71933266/175239653-ce80c522-17f1-4a32-aa4a-13e4723d27ce.png)
 
